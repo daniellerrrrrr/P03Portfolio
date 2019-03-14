@@ -5,33 +5,85 @@
     <title>Danielle Ragas | Home</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
 
     <header>
-      <nav>
-        <a href="index.html">home</a>
-        <a href="work.html">work</a>
-        <a href="about.html">about</a>
+      <nav class="col-container">
+        <div class="col">
+          <a class="nav-title" href="index.html">Danielle Ragas</a>
+        </div>
+
+        <div class="col-nav">
+          <div class="nav-links">
+            <a class="nav-link" href="index.html">home</a>
+            <a class="nav-link" href="index.html#work">work</a>
+            <a class="nav-link" href="project-template.html">project template</a>
+            <a class="nav-link" href="about.html">about</a>
+          </div>
+        </div>
+
       </nav>
     </header>
 
-    <div>
-      <h2>anthem</h2>
-      <h2>beep</h2>
-      <h2>amorphous</h2>
-      <h2>illustration</h2>
+    <div class="container">
+    <section id="work">
+    <h2>Work</h2>
+
+      <div class="col-container index">
+
+        <div class="col">
+          <h2 class="proj-name">beep</h2>
+          <h3 class="proj-role">Animation / 3D Modelling</h3>
+
+          <figure class="image-link">
+            <a href="project-template.html"><img src="images/coverImages/beepCover.jpg" alt="A screenshot of the game beep."/></a>
+          </figure>
+        </div>
+
+        <div class="col">
+          <h2 class="proj-name">BioWare</h2>
+          <h3 class="proj-role">Storyboards</h3>
+
+          <figure class="image-link">
+            <a href="project-template.html"><img src="images/coverImages/anthemCover.png" alt="A screenshot of the Colossus exo suit from the video game Anthem."/></a>
+          </figure>
+        </div>
+
+      </div>
+
+      <div class="col-container index">
+
+          <div class="col">
+            <h2 class="proj-name">Illustration</h2>
+            <h3 class="proj-role">Artist</h3>
+
+            <figure class="image-link">
+              <a href="project-template.html"><img src="images/coverImages/coffeeCover.png" alt="An illustration of a coffee shop in space."/></a>
+            </figure>
+          </div>
+
+          <div class="col">
+            <h2 class="proj-name">Amorphous</h2>
+            <h3 class="proj-role">Animation / 3D Modelling </h3>
+
+              <figure class="image-link">
+                <a href="project-template.html"><img src="images/coverImages/amorphousCover.jpg" alt="A screenshot from a 3D animated short about an astronaut on an alien planet."/></a>
+              </figure>
+          </div>
+
+        </div>
+      </section>
     </div>
-
-
 
     <footer>
       <p>Danielle Ragas</p>
-      <a href="index.html">home</a>
-      <a href="https://github.com/daniellerrrrrr/P03Portfolio">github</a>
-      <a href="styleguide.html">style guide</a>
+      <a class="footer-link" href="index.html">home</a>
+      <a class="footer-link" href="https://github.com/daniellerrrrrr/P03Portfolio">github</a>
+      <a class="footer-link" href="styleguide.html">style guide</a>
     </footer>
 
   </body>
