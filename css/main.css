@@ -76,7 +76,7 @@ figcaption{
 
 .image-header{
   padding: 8rem;
-  background: center / cover no-repeat url("../images/coverImages/beepCover.jpg");
+  background: center / cover no-repeat url("../images/coverImages/amorphousCover.jpg");
 }
 
 nav{
@@ -211,6 +211,32 @@ footer{
   /* font-weight: bold; */
   font-family: 'Overpass Mono', sans-serif;
 }
+
+.bg{
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  border: 1px solid #000;
+  padding:3rem 6rem 1rem 1rem;
+}
+
+.footer-colour{
+  background: #f2f2f2;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding:3rem 6rem 1rem 1rem;
+}
+
+.accent{
+  background: #ffe186;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding:3rem 6rem 1rem 1rem;
+}
+
+
 
 @media only screen and (max-width: 820px) {
   .container{
