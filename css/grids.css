@@ -66,6 +66,10 @@
   margin: 0 0.5rem 0 0;
 }
 
+.spacing .col:last-child{
+  margin: 0;
+}
+
 .col-nav{
   flex: 2 1 0;
   -webkit-flex: 2 1 0;
@@ -115,6 +119,8 @@ header, footer, main{
   flex-shrink: 0;
 }
 
+
+
 @media only screen and (max-width: 820px) {
   .col-container{
     flex-direction: column;
@@ -130,6 +136,7 @@ header, footer, main{
 
   .col{
     width: 100%;
+    margin-bottom: 2rem;
   }
 
   .col-index{
@@ -147,5 +154,13 @@ header, footer, main{
     flex: 1 1 0;
     -webkit-flex: 1 1 0;
     -ms-webkit-flex:  1 1 0;
+  }
+
+  .wide-container .col{
+    margin-bottom: 2rem;
+  }
+
+  .spacing .col{
+    margin-bottom: 2rem;
   }
 }
