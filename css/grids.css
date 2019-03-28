@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.col-container, .col-container-info{
+.col-container, .col-container-info{ /* NOTE: general, project info flexbox */
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -16,7 +16,7 @@
   -ms-align-items: flex-start;
 }
 
-.index{
+.index{ /* NOTE: index page flexbox */
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -30,7 +30,7 @@
   -ms-align-items: stretch;
 }
 
-.col-container-nav{
+.col-container-nav{ /* NOTE: navigation bar flexbox */
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -44,21 +44,24 @@
   -ms-align-items: center;
 }
 
-.col-projects{
+.col-nav{
+  flex: 2 1 0;
+  -webkit-flex: 2 1 0;
+  -ms-webkit-flex:  2 1 0;
 }
 
-.col-desc{
+.col-desc{ /* NOTE: project description */
   flex: 1 1 6rem;
   margin-right: 3rem;
 }
 
-.col, .col-info{
+.col, .col-info{ /* NOTE: general columns, project info */
   flex: 1 1 0;
   -webkit-flex: 1 1 0;
   -ms-webkit-flex:  1 1 0;
 }
 
-.wide-container .col{
+.wide-container .col{ /* NOTE: spacing for columns in wide section on illustration page */
   margin: 0 0.5rem 0 0;
 }
 
@@ -67,17 +70,11 @@
 }
 
 .spacing .col:last-child{
-  margin: 0;
-}
-
-.col-nav{
-  flex: 2 1 0;
-  -webkit-flex: 2 1 0;
-  -ms-webkit-flex:  2 1 0;
+  margin-right: 0;
 }
 
 .col-2{
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .align{
@@ -104,6 +101,10 @@
   margin-right: 3rem;
 }
 
+
+
+
+/* NOTE: for positioning footer always at the bottom */
 .content {
   min-height: 100%;
   display: flex;
@@ -136,12 +137,16 @@ header, footer, main{
 
   .col{
     width: 100%;
-    margin-bottom: 2rem;
+  }
+
+  .col:nth-child(n+2){
+    margin-top: 2rem;
   }
 
   .col-index{
     width: 100%;
   }
+
   .col-index:nth-child(even){
     width: 100%;
   }
@@ -156,11 +161,15 @@ header, footer, main{
     -ms-webkit-flex:  1 1 0;
   }
 
-  .wide-container .col{
+  .wide-container{
     margin-bottom: 2rem;
   }
 
-  .spacing .col{
+  .col-2-images{
     margin-bottom: 2rem;
+  }
+
+  .illust-container2 .spacing:last-child{
+    margin-top: 2rem;
   }
 }
