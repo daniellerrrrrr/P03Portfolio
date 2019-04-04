@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | Citations</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
+
   <div class="content">
 
     <header>
@@ -36,14 +40,16 @@
 
         <li>Gallagher, N. (2012). <strong>Normalize [css file].</strong> Retrieved from <a href="https://github.com/necolas/normalize.css/">https://github.com/necolas/normalize.css/</a></li>
         <li>Torres, R. (2016). <strong>CSS Flexbox - Sass Mixins [scss file].</strong> Retrieved from <a href="https://gist.github.com/richardtorres314/26b18e12958ba418bb37993fdcbfc1bd">https://gist.github.com/richardtorres314/26b18e12958ba418bb37993fdcbfc1bd</a></li>
-
         <li>Dziedzic, Ł. (2010). <strong>Lato [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Lato">https://fonts.google.com/specimen/Lato</a></li>
         <li>Withrington, D. <strong>Overpass Mono [font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Overpass+Mono">https://fonts.google.com/specimen/Overpass+Mono</a></li>
+        <li>A simple page fade-in with JavaScript. (n.d.) Retrieved from <a href="https://alligator.io/js/simple-page-fade-in/">https://alligator.io/js/simple-page-fade-in/</a></li>
+
+
 
         </ul>
         <div class="space"></div>
 
-        <h2>References</h2>
+        <h2>Other References</h2>
         <ul>
           <li>w3schools. <strong>How TO - Image Hover Overlay.</strong> Retrieved from <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">https://www.w3schools.com/howto/howto_css_image_overlay.asp</a></li>
           <li>Coiyer, C. (2013). <strong>Tinted Images with Multiple Backgrounds.</strong> Retrieved from <a href="https://css-tricks.com/tinted-images-multiple-backgrounds/">https://css-tricks.com/tinted-images-multiple-backgrounds/</a></li>
@@ -65,5 +71,13 @@
     </footer>
 
   </div>
+
+
+  <!-- NOTE: fade in page script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+      document.body.className = '';
+    });
+  </script>
   </body>
 </html>

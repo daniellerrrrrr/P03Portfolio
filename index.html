@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | Home</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
 
     <header>
       <nav class="col-container-nav">
@@ -50,7 +53,7 @@
         <a class="index-link" href="illustration.html">
           <div class="col index-image illust">
             <h2 class="proj-name">Illustration</h2>
-            <h3><span class="proj-role">Personal Work</span></h3>
+            <h3><span class="proj-role">Personal Artwork</span></h3>
           </div>
         </a>
 
@@ -73,5 +76,11 @@
       <a class="footer-link" href="citations.html">citations</a>
     </footer>
 
+    <!-- NOTE: fade in page script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
   </body>
 </html>

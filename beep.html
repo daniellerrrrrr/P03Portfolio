@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | Beep</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
 
     <header>
       <nav class="col-container-nav">
@@ -84,6 +86,7 @@
 
         <figure>
           <img src="images/coverImages/beepCover.jpg" alt="screenshot of the game, a pink alien in a blue world"/>
+          <figcaption>A screenshot from the game.</figcaption>
         </figure>
 
         <div class="space"></div>
@@ -100,29 +103,26 @@
 
           <div class="space"></div>
 
-          <h3>Implementation</h3>
-          <p>Using our concept art as a base, I used proper 3D modelling workflows to create and animate character and enemy models as well as new environment assets. These assets were then imported and placed into the game world.</p>
-          <p>Below are some of the new animations I created for our cube enemy.</p>
+          <h3>Modelling and Animation</h3>
+          <p>Using our concept art as a base, I used proper 3D modelling workflows to create and animate character and enemy models. We also made sure to stick to strict visual styles and colour palettes to define the player character and make them stand out in contrast to the game world: the main character used reds, pinks, and round shapes, while cube enemies and the game world were made up of blues, greens, purples, and cubes and rectangles.</p>
+
           <div class="col-container">
             <div class="col">
-              <div class="overlay-container">
                 <figure>
-                  <img src="images/beep/cubeRun.gif" alt="cube enemy run cycle"/>
-                  <figcaption class="overlay"><span class="text">Run cycle</span></figcaption>
+                  <img src="images/beep/spaceshipFinal.png" alt="a round pink alien and its red spaceship"/>
+                  <figcaption>The player and its spaceship</figcaption>
                 </figure>
-              </div>
             </div>
 
             <div class="col col-2-images">
-              <div class="overlay-container">
                 <figure>
-                  <img src="images/beep/cubeWalk.gif" alt="cube enemy walk cycle"/>
-                  <figcaption class="overlay"><span class="text">Walk cycle</span></figcaption>
+                  <img src="images/beep/cubeEnemies.png" alt="the blue cube enemy with trees and pillars"/>
+                  <figcaption>A cube enemy with some props from the environment</figcaption>
                 </figure>
-              </div>
             </div>
           </div>
 
+          <p>Below are some of the new animations I created for our cube enemy.</p>
           <div class="col-container spacing">
             <div class="col">
               <div class="overlay-container">
@@ -152,7 +152,68 @@
             </div>
           </div>
 
+          <div class="col-container">
+            <div class="col">
+              <div class="overlay-container">
+                <figure>
+                  <img src="images/beep/cubeRun.gif" alt="cube enemy run cycle"/>
+                  <figcaption class="overlay"><span class="text">Run cycle</span></figcaption>
+                </figure>
+              </div>
+            </div>
 
+            <div class="col col-2-images">
+              <div class="overlay-container">
+                <figure>
+                  <img src="images/beep/cubeWalk.gif" alt="cube enemy walk cycle"/>
+                  <figcaption class="overlay"><span class="text">Walk cycle</span></figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="space"></div>
+
+          <h3>Cutscenes</h3>
+
+          <p>I was also responsible for creating the opening and ending cutscenes of the game to communicate the narrative. We wanted to create an interesting opening and give the player a satisfying conclusion at the end. I started with storyboards to figure out how to I wanted to frame the crash landing, and then went on to build the cutscenes in Unity using their timeline feature. </p>
+
+
+          <figure>
+            <img src="images/beep/introCine.png" alt="The player's spaceship hurtling towards the forest"/>
+            <figcaption>The player's spaceship hurtling towards the forest</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/beep/crash.png" alt="The player's crashed spaceship being stolen by the cube enemies"/>
+            <figcaption>The player's crashed spaceship being stolen by the cube enemies</figcaption>
+          </figure>
+
+
+          <div class="space"></div>
+
+          <h3>Level Visuals</h3>
+
+          <p>Working with my team I also modelled and created many game assets and then placed them into levels. I worked on defining lighting and colour settings to show the passing of time throughout the game, the evolution of the cube enemy's world, and also reflect the increasing difficulty of gameplay.</p>
+
+          <p>Level 1 begins with the player crashing into an alien planet's forest early in the morning. In level 3, as night begins to fall, the player suffers a setback in their journey. In this level I darkened the skies and added pink fog and ambient lighting to create a sunset.</p>
+
+
+          <div class="col-container">
+            <div class="col">
+              <figure>
+                <img src="images/beep/level1.png" alt="A screenshot of a blue alien forest with a green sky."/>
+                <figcaption>A shot of level 1, the forest</figcaption>
+              </figure>
+            </div>
+
+            <div class="col col-2-images">
+              <figure>
+                <img src="images/beep/level3.png" alt="A screenshot of a an alien logging camp at sunset"/>
+                <figcaption>Level 3, the logging camp</figcaption>
+              </figure>
+            </div>
+          </div>
 
           <div class="space"></div>
 
@@ -177,6 +238,13 @@
       <a class="footer-link" href="styleguide.html">style guide</a>
       <a class="footer-link" href="citations.html">citations</a>
     </footer>
+
+    <!-- NOTE: fade in page script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
 
   </body>
 </html>

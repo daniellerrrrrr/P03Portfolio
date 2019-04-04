@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | Amorphous</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+</head>
 
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
 
     <header>
       <nav class="col-container-nav">
@@ -82,6 +85,7 @@
 
         <figure>
           <img src="images/coverImages/amorphousCover.jpg" alt="screenshot from the final short showing the astronaut walking across the landscape"/>
+          <figcaption>A screenshot from the beginning of the short.</figcaption>
         </figure>
 
         <div class="space"></div>
@@ -130,7 +134,7 @@
           <div class="space"></div>
 
           <h3>Final Short</h3>
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/162523399?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/162523399?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
       </section>
 
     </div>
@@ -144,5 +148,12 @@
       <a class="footer-link" href="citations.html">citations</a>
     </footer>
 
+
+    <!-- NOTE: fade in page script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
   </body>
 </html>

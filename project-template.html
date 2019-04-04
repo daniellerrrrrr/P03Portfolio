@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | Project</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
 
     <header>
       <nav class="col-container-nav">
@@ -96,5 +99,12 @@
       <a class="footer-link" href="citations.html">citations</a>
     </footer>
 
+
+    <!-- NOTE: fade in page script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
   </body>
 </html>

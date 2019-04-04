@@ -11,11 +11,27 @@ $transTime: 0.2s;
 $overpass: 'Overpass Mono', sans-serif;
 $lato: 'Lato', sans-serif;
 
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
 body {
   color: $fontColor;
   margin: 0;
   font-family: $lato;
   line-height: 1.5rem;
+
+  opacity: 1;
+  @include transition(1s opacity);
+}
+
+// NOTE: make body fade in
+body.fade{
+  opacity: 0;
+  @include transition(none);
 }
 
 html, body {
@@ -420,6 +436,7 @@ footer {
   font-family: $overpass;
 }
 
+
 @media only screen and (max-width: 820px) {
   .container, .illust-container1 {
     width: 100%;
@@ -456,6 +473,12 @@ footer {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .index-container {
+    margin: 7rem auto 0;
+  }
+}
+
 @media only screen and (max-width: 735px) {
   .proj-name {
     font-size: 1.5rem;
@@ -471,11 +494,5 @@ footer {
     width: 100%;
     padding: 0 2rem;
     margin: 8rem auto 2rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .index-container {
-    margin: 7rem auto 0;
   }
 }

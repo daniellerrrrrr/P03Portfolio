@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | About</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
+
     <div class="content">
 
     <header>
@@ -46,7 +50,7 @@
               </div>
 
             <figure>
-              <img src="images/profile2.JPG" alt=""/>
+              <img src="images/profile2.JPG" alt="a photo of me"/>
             </figure>
       </section>
     </div>
@@ -63,5 +67,12 @@
   </footer>
 
 </div>
+
+<!-- NOTE: fade in page script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function(e) {
+    document.body.className = '';
+  });
+</script>
   </body>
 </html>

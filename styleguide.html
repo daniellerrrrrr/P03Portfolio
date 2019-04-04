@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Danielle Ragas | Style Guide</title>
     <link rel="stylesheet" type="text/css" href="css/normalize-dist.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/main-dist.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <script>
+      document.body.className += 'fade';
+    </script>
 
     <header>
       <nav class="col-container-nav">
@@ -46,8 +49,8 @@
             <section class="element">
               <h3>Image Link</h3>
               <figure class="image-link">
-                <a href="#"><img src="images/coverImages/coffeeCoverOld.png" alt="An illustration of a coffee shop in space."/></a>
-                <figcaption>An illustration of a coffee shop in space.</figcaption>
+                <a href="#"><img src="images/coverImages/coffeeCover.jpg" alt="An illustration of a coffee shop in space."/></a>
+                <figcaption>Space coffee shop</figcaption>
               </figure>
             </section>
 
@@ -56,8 +59,8 @@
 
               <div class="overlay-container">
                 <figure>
-                  <img src="images/art/coffee.png" alt=""/>
-                  <figcaption class="overlay"><span class="text">Caption</span></figcaption>
+                  <img src="images/coverImages/coffeeCover.jpg" alt="An illustration of a coffee shop in space."/>
+                  <figcaption class="overlay"><span class="text">Space coffee shop</span></figcaption>
                 </figure>
               </div>
             </section>
@@ -141,6 +144,7 @@
         <div class="space"></div>
 
         <section class="element">
+          <h3>Page Templates</h3>
           <a href="project-template.html">Project page template</a>
         </section>
 
@@ -148,26 +152,43 @@
 
         <section class="element">
           <h3>Bio</h3>
-            <p>Hi there! I'm Danielle. I'm a design student in my final semester at the school of Interactive Arts and Technology at Simon Fraser University. I have a passion for working with 2D art, illustration, and storytelling, and I'm eager to bring my skills to animation or video game teams and projects. </p>
+            <p>Hello! I'm Danielle, an artist with a passion for working with illustration and storytelling. I'm interested in movies, animation, and video games, and I'm eager to bring my skills to projects and teams in these industries. In my free time you can find me doodling in my sketchbook or playing video games. Currently I'm a student at the school of Interactive Arts and Technology at Simon Fraser University in Vancouver, BC. I'm finishing off a degree in design, and will be graduating in August 2019!</p>
         </section>
 
         <div class="space"></div>
 
         <section class="element">
           <h3>Process Analysis: Beep</h3>
-          <p>Graduation project / January - March 2019 / Animation, 3D Modelling / Photoshop, Maya, Unity 3D</p>
+          <p>Video Game / January - April 2019 / Academic Graduation Project</p>
             <h4>The Project</h4>
-            <p>Beep is a 3D action adventure game where the player controls a round ball that can morph into a cube. Using this ability, the player must evade enemies, retrieve their stolen spaceship, and escape a hostile planet.</p>
-            <p>This project is a redux of a game initially created in 2017 for a game design course.</p>
+            <p>Beep is a 3D adventure game where the player controls a round ball that can morph into a cube. The player must evade enemies, retrieve their stolen spaceship, and escape a hostile planet.</p>
+            <p>This project is a revision of a game initially created in 2017 for a game design course.
             <p>As a member of the art team, my responsibilities included creating concept art, modelling and texturing 3D assets, and animation cutscenes and characters.</p>
 
             <h4>Preparation</h4>
-            <p>The first task we had to complete was a  review of our previous game. Due to to time constraints and skill level back in 2017, we felt that our resulting game was rushed and flawed, and not quite fulfilling the potential we felt it had. There were a variety of bugs, inconsistency with level design, and weak visual style, narrative, and 3D assets.</p>
+            <p>The first task we had to complete was a review of our previous game. Due to to time constraints and our own team’s skill level back in 2017, we felt that our resulting game was rushed and flawed, and not quite fulfilling the potential we felt it had. There were a variety of bugs, inconsistencies with level design, empty looking environments, and an incomplete narrative.</p>
+            <p>Having identified the problems with our original game, we then worked on additional research and conceptualization. I worked on creating general concept art for new assets and visuals, and worked with the rest of the team on brainstorming a narrative that would have a satisfying conclusion for the player. Concept art was made with the idea that we wanted to emphasize the square shapes and rigidity of the game world while contrasting with the round and warm-colour palette of the player character.</p>
 
-            <p>Having identified the problems with our original game, we then worked on additional research and conceptualization. I worked on creating general concept art for new assets and visuals, and worked with the team on brainstorming a narrative that would have a satisfying conclusion for the player. Concept art was made with the idea that we wanted to emphasize the square shapes and rigidity of the game world while contrasting with the round and warm-colour palette of the player character.</p>
+            <h4>Modelling and Animation</h4>
+            <p>Using our concept art as a base, I used proper 3D modelling workflows to create and animate character and enemy models. We also made sure to stick to strict visual styles and colour palettes to define the player character and make them stand out in contrast to the game world: the main character used reds, pinks, and round shapes, while cube enemies and the game world were made up of blues, greens, purples, and cubes and rectangles. </p>
 
-            <h4>Implementation</h4>
-            <p>Using our concept art as a base, I used proper 3D modelling workflows to create and animate character and enemy models as well as new environment assets. These assets are then implemented into the game world.</p>
+            <div class="col-container">
+              <div class="col">
+                  <figure>
+                    <img src="images/beep/spaceshipFinal.png" alt="a round pink alien and its red spaceship"/>
+                    <figcaption>The player and its spaceship</figcaption>
+                  </figure>
+              </div>
+
+              <div class="col col-2-images">
+                  <figure>
+                    <img src="images/beep/cubeEnemies.png" alt="the blue cube enemy with trees and pillars"/>
+                    <figcaption>A cube enemy with some props from the environment</figcaption>
+                  </figure>
+              </div>
+            </div>
+
+            <p>Below are some of the new animations I created for our cube enemy.</p>
 
             <div class="col-container">
               <div class="col">
@@ -177,7 +198,7 @@
                 </figure>
               </div>
 
-              <div class="col">
+              <div class="col col-2-images">
                 <figure>
                   <img src="images/beep/cubeWalk.gif" alt="Cube enemy walk cycle"/>
                   <figcaption>Cube enemy walk cycle</figcaption>
@@ -185,29 +206,28 @@
               </div>
             </div>
 
-            <figure>
-              <img src="images/beep/Spaceship.gif" alt="shader testing for our spaceship"/>
-              <figcaption>Shader testing for our spaceship</figcaption>
-            </figure>
+            <h4>Cutscenes</h4>
+            <p>I was also responsible for creating the opening and ending cutscenes of the game to communicate the narrative. We wanted to create an interesting opening and give the player a satisfying conclusion at the end. I started with storyboards to figure out how to I wanted to frame the crash landing, and then went on to build the cutscenes in Unity using their timeline feature.</p>
+
+            <h4>Level Visuals</h4>
+            <p>Working with my team I also modelled and created many game assets and then placed them into levels. I worked on defining lighting and colour settings to show the passing of time throughout the game, the evolution of the cube enemy's world, and also reflect the increasing difficulty of gameplay.Level 1 begins with the player crashing into an alien planet's forest early in the morning. In level 3, as night begins to fall, the player suffers a setback in their journey. In this level I darkened the skies and added pink fog and ambient lighting to create a sunset.</p>
 
             <h4>Problems and Resolutions</h4>
-            <p>Our main problem with this project was figuring out how to elevate our old game. As a team, we decided on revising the overall themes, completely discarding and old, hacky work, and redoing them using proper workflows.</p>
+            <p>Our main problem with this project was figuring out how to elevate our old game. As a team, we decided on revising the overall themes, completely discarding any old, hacky work, and redoing them using proper workflows.</p>
+            <p>Mid way through the project, we realized that again we were running into the problem of not having enough time and being too ambitious in how many levels and mechanics we wanted to implement. In order to be able to create a final, polished game, we decided to cut back on our scope, by creating 5 levels instead of 6, and implementing only a few new in-game activities. </p>
 
             <h4>Evaluation</h4>
-            <p>Over the course of this semester, our team has also learned many valuable lessons about self directing and compartmentalizing a team in order to tackle a project with a large scope.</p>
+            <p>Over the course of this semester, our team has learned many valuable lessons about self directing and compartmentalizing a team in order to tackle creating a game with a large scope. For example, we split our team into separate groups: art, and programming, with each member being responsible for tasks such as level design, modelling, or coding of enemy AI. We also made use of collaborative tools such as Slack and SourceTree to effectively manage files and all the moving parts of the project without running into problems. Overall we were able to complete and deliver a game that demonstrates everyone’s hard work and is also a satisfying experience for the player. </p>
         </section>
 
         <div class="space"></div>
 
         <section class="element">
           <h3>Process Analysis: Amorphous</h3>
-          <p>Academic project / January - March 2016 / Concept Art, 3D Modelling, Animation / Photoshop, Maya, After Effects</p>
+          <p>Animated Short / January - April 2016 / Academic</p>
             <h4>The Project</h4>
-            <p>Amorphous is a 3D animated short about an astronaut on an alien planet and his encounter with a strange creature.</p>
-
-            <p>This short was created over a period of 3 months for an introductory animation course.</p>
-
-            <p>I worked on the narrative concept, modelling and rigging the main character and a portion of the art assets, and editing together the clips at the end of the short.</p>
+            <p>Amorphous is a 3D animated short about an astronaut on an alien planet and his encounter with a strange creature. This short was created over a period of 4 months for an introductory animation course.</p>
+            <p>I worked on the narrative concept, modelling and rigging of the main character and a portion of the art assets, and editing together a section of the final film.</p>
 
             <h4>Preparation</h4>
             <p>The design brief for this project was to create a short 3D animated narrative, using Maya. As a team we got together to brainstorm some ideas, and I boarded out a story about an astronaut that meets an alien who turns out to be a very sinister character. We split the short among our 4 teammates by environment, so each member was responsible for a quarter of the final short.</p>
@@ -236,13 +256,14 @@
             </figure>
 
             <h4>Problems and Resolutions</h4>
-            <p>The major challenge of working on this project was learning Maya and using it to create an animated short at the same time.</p>
+            <p>The major challenge of working on this project was learning Maya and using it to create an animated short at the same time. As a team we made sure to communicate any tips, shortcuts, and workflows to each other as we learned the ins and outs of the program together.</p>
+            <p>Working as a team of 4 also presented its unique challenges. We split the animation work based on the 4 different areas the main character travels through, but we also had to make sure that our scenes felt consistent across the whole short. To do this, we created concept art that everyone could refer back to and walk cycles for the characters that everyone would use in their scene. At the end of the project, one member did an editing pass to cut our different shots together and apply extra effects to tie everything together visually.</p>
 
             <h4>Evaluation</h4>
-            <p>Overall this project was tough as we had to learn how to use the software as we went along. However, when comparing our final short to our concept art and idea, I’m satisfied that we were able to successfully complete and execute our initial vision. </p>
+            <p>By being open to suggestions and knowing when to cut or adapt our original ideas, I'm satisfied that we were able to successfully tell a complete story while still being faithful to our initial concept and vision. </p>
 
             <h4>Final Short</h4>
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/162523399?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/162523399?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         </section>
       </section>
 
@@ -257,5 +278,12 @@
       <a class="footer-link" href="citations.html">citations</a>
     </footer>
 
+
+    <!-- NOTE: fade in page script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
   </body>
 </html>
